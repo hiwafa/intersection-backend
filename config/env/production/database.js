@@ -16,9 +16,7 @@ module.exports = ({ env }) => {
           username: "dyhvhpvquakdqv",
           password: "91bdbd3fc11c4ee8852e8de45cf7a3dc60a2bbad4be2001c6ae3f10ba41be3b8",
           ssl: { rejectUnauthorized: false },
-          options: {
-            ssl: false,
-          },
+          options: {  ssl: true },
         },
       },
     },
