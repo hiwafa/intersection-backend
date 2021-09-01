@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_treatments",
+  "info": {
+    "name": "PROJECT_TREATMENT"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TREATMENT_ID": {
+      "type": "biginteger",
+      "required": true,
+      "unique": false
+    },
+    "PROJECT_ID": {
+      "type": "biginteger",
+      "required": true
+    },
+    "PROJECT_TREATMENT_ID": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "SERVICE_LIFE": {
+      "type": "biginteger"
+    },
+    "CRF": {
+      "type": "decimal"
+    },
+    "CMF": {
+      "type": "decimal"
+    },
+    "SALVAGE_PERCENT": {
+      "type": "decimal"
+    },
+    "INTEREST_RATE": {
+      "type": "decimal"
+    },
+    "TOTAL_TREATMENT_COST": {
+      "type": "biginteger"
+    },
+    "OM_COST": {
+      "type": "biginteger"
+    },
+    "TREATMENT_COST": {
+      "type": "biginteger"
+    },
+    "treatment": {
+      "model": "treatment"
+    },
+    "project": {
+      "model": "project"
+    }
+  }
+}

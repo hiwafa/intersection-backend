@@ -1,0 +1,97 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "PROJECT"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PROJECT_ID": {
+      "type": "biginteger",
+      "unique": true,
+      "required": true
+    },
+    "PROJECT_NAME": {
+      "type": "string",
+      "required": true
+    },
+    "PROJECT_NUMBER": {
+      "type": "string"
+    },
+    "PROJECT_STATUS": {
+      "type": "string",
+      "required": true
+    },
+    "PROJECT_SUBPHASE": {
+      "type": "string"
+    },
+    "INTERSECTION_ID": {
+      "type": "biginteger"
+    },
+    "CRASH_COUNT": {
+      "type": "biginteger"
+    },
+    "CRASH_START_DATE": {
+      "type": "date"
+    },
+    "CRASH_END_DATE": {
+      "type": "date"
+    },
+    "NUMBER_OF_FATALITIES": {
+      "type": "biginteger"
+    },
+    "NUMBER_OF_INJURIES": {
+      "type": "biginteger"
+    },
+    "NUMBER_OF_PDO": {
+      "type": "biginteger"
+    },
+    "NUMBER_OF_A_INJURIES": {
+      "type": "biginteger"
+    },
+    "NUMBER_OF_B_INJURIES": {
+      "type": "biginteger"
+    },
+    "NUMBER_OF_C_INJURIES": {
+      "type": "biginteger"
+    },
+    "CRASH_RATE_AADT": {
+      "type": "decimal"
+    },
+    "EPDO": {
+      "type": "biginteger"
+    },
+    "EUAB": {
+      "type": "decimal"
+    },
+    "EUAC": {
+      "type": "decimal"
+    },
+    "BEN_COST": {
+      "type": "decimal"
+    },
+    "PROJECT_START_DATE": {
+      "type": "date"
+    },
+    "PROJECT_END_DATE": {
+      "type": "date"
+    },
+    "PROJECT_AUTH_DATE": {
+      "type": "date"
+    },
+    "PROJECT_COMP_DATE": {
+      "type": "date"
+    },
+    "PROGRAM_NAME": {
+      "type": "string"
+    },
+    "PROGRAM_NUMBER": {
+      "type": "string"
+    }
+  }
+}

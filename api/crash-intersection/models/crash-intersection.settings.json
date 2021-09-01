@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "crash_intersections",
+  "info": {
+    "name": "CRASH_INTERSECTION",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CRASH_ID": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "CRASH_RECORD_NBR": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "INTERSECTION_ID": {
+      "type": "biginteger"
+    },
+    "COUNTY": {
+      "type": "string"
+    },
+    "DISTRICT": {
+      "type": "string"
+    },
+    "HIGHWAY_CLASS": {
+      "type": "string"
+    },
+    "DATE_OF_CRASH": {
+      "type": "date",
+      "required": true
+    },
+    "SEVERITY": {
+      "type": "string",
+      "required": true
+    },
+    "COLLISION_TYPE": {
+      "type": "string"
+    },
+    "LIGHT_CONDITION": {
+      "type": "string"
+    },
+    "ROAD_SURFACE_TYPE": {
+      "type": "string"
+    },
+    "ROAD_SURFACE_CONDITION": {
+      "type": "string"
+    },
+    "WEATHER_CONDITION": {
+      "type": "string"
+    },
+    "ENVI_CONDITION": {
+      "type": "string"
+    },
+    "LATITUDE": {
+      "type": "decimal"
+    },
+    "LONGITUD": {
+      "type": "decimal"
+    },
+    "NUMBER_OF_FATALITIES": {
+      "type": "biginteger"
+    },
+    "NUMBER_OF_INJURIES": {
+      "type": "biginteger"
+    },
+    "NUMBER_OF_PDO": {
+      "type": "biginteger"
+    },
+    "TIME_OF_CRASH": {
+      "type": "time"
+    },
+    "NUMBER_OF_A_INJURIES": {
+      "type": "biginteger"
+    },
+    "NUMBER_OF_B_INJURIES": {
+      "type": "biginteger"
+    },
+    "NUMBER_OF_C_INJURIES": {
+      "type": "biginteger"
+    },
+    "CRASH_INVENTORY": {
+      "model": "crash-intersection"
+    }
+  }
+}

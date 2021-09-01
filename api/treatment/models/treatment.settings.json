@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "treatments",
+  "info": {
+    "name": "TREATMENT"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TREATMENT_ID": {
+      "type": "biginteger",
+      "unique": true,
+      "required": true
+    },
+    "TREATMENT_NAME": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "TREATMENT_TYPE": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "SERVICE_LIFE": {
+      "type": "biginteger",
+      "required": true
+    },
+    "CRF": {
+      "type": "decimal",
+      "required": true
+    },
+    "CMF": {
+      "type": "decimal",
+      "required": true
+    },
+    "SALVAGE_PERCENT": {
+      "type": "decimal"
+    },
+    "INTEREST_RATE": {
+      "type": "decimal"
+    },
+    "TOTAL_TREATMENT_COST": {
+      "type": "decimal",
+      "required": true
+    },
+    "OM_COST": {
+      "type": "decimal"
+    },
+    "TREATMENT_COST": {
+      "type": "decimal"
+    }
+  }
+}

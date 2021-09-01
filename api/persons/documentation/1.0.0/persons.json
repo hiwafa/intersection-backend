@@ -1,0 +1,712 @@
+{
+  "paths": {
+    "/persons": {
+      "get": {
+        "deprecated": false,
+        "description": "Find all the persons's records",
+        "responses": {
+          "200": {
+            "description": "Retrieve persons document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Persons"
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Persons"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "post": {
+        "deprecated": false,
+        "description": "Create a new persons record",
+        "responses": {
+          "200": {
+            "description": "Retrieve persons document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Persons"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Persons"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewPersons"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/persons/count": {
+      "get": {
+        "deprecated": false,
+        "description": "Retrieve the number of persons documents",
+        "responses": {
+          "200": {
+            "description": "Retrieve persons document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "count": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Persons"
+        ],
+        "parameters": []
+      }
+    },
+    "/persons/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "Find one persons record",
+        "responses": {
+          "200": {
+            "description": "Retrieve persons document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Persons"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Persons"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a single persons record",
+        "responses": {
+          "200": {
+            "description": "Retrieve persons document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Persons"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Persons"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewPersons"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a single persons record",
+        "responses": {
+          "200": {
+            "description": "deletes a single persons based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Persons"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Persons": {
+        "required": [
+          "id",
+          "CRASH_ID",
+          "PERSON_ID"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "CRASH_ID": {
+            "type": "integer"
+          },
+          "PERSON_ID": {
+            "type": "integer"
+          },
+          "VEHICLE_ID": {
+            "type": "integer"
+          },
+          "AGE": {
+            "type": "integer"
+          },
+          "DATE_OF_BIRTH": {
+            "type": "string",
+            "format": "date"
+          },
+          "GENDER": {
+            "type": "string"
+          },
+          "DRIVER_LICENSE_STATE": {
+            "type": "string"
+          },
+          "DRIVER_CONDITION": {
+            "type": "string"
+          },
+          "DRIVER_DISTRACTED_BY": {
+            "type": "string"
+          },
+          "crash_intersection": {
+            "required": [
+              "id",
+              "CRASH_ID",
+              "CRASH_RECORD_NBR",
+              "DATE_OF_CRASH",
+              "SEVERITY"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "CRASH_ID": {
+                "type": "integer"
+              },
+              "CRASH_RECORD_NBR": {
+                "type": "string"
+              },
+              "INTERSECTION_ID": {
+                "type": "integer"
+              },
+              "COUNTY": {
+                "type": "string"
+              },
+              "DISTRICT": {
+                "type": "string"
+              },
+              "HIGHWAY_CLASS": {
+                "type": "string"
+              },
+              "DATE_OF_CRASH": {
+                "type": "string"
+              },
+              "SEVERITY": {
+                "type": "string"
+              },
+              "COLLISION_TYPE": {
+                "type": "string"
+              },
+              "LIGHT_CONDITION": {
+                "type": "string"
+              },
+              "ROAD_SURFACE_TYPE": {
+                "type": "string"
+              },
+              "ROAD_SURFACE_CONDITION": {
+                "type": "string"
+              },
+              "WEATHER_CONDITION": {
+                "type": "string"
+              },
+              "ENVI_CONDITION": {
+                "type": "string"
+              },
+              "LATITUDE": {
+                "type": "number"
+              },
+              "LONGITUD": {
+                "type": "number"
+              },
+              "NUMBER_OF_FATALITIES": {
+                "type": "integer"
+              },
+              "NUMBER_OF_INJURIES": {
+                "type": "integer"
+              },
+              "NUMBER_OF_PDO": {
+                "type": "integer"
+              },
+              "TIME_OF_CRASH": {
+                "type": "string"
+              },
+              "NUMBER_OF_A_INJURIES": {
+                "type": "integer"
+              },
+              "NUMBER_OF_B_INJURIES": {
+                "type": "integer"
+              },
+              "NUMBER_OF_C_INJURIES": {
+                "type": "integer"
+              },
+              "CRASH_INVENTORY": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewPersons": {
+        "required": [
+          "CRASH_ID",
+          "PERSON_ID"
+        ],
+        "properties": {
+          "CRASH_ID": {
+            "type": "integer"
+          },
+          "PERSON_ID": {
+            "type": "integer"
+          },
+          "VEHICLE_ID": {
+            "type": "integer"
+          },
+          "AGE": {
+            "type": "integer"
+          },
+          "DATE_OF_BIRTH": {
+            "type": "string",
+            "format": "date"
+          },
+          "GENDER": {
+            "type": "string"
+          },
+          "DRIVER_LICENSE_STATE": {
+            "type": "string"
+          },
+          "DRIVER_CONDITION": {
+            "type": "string"
+          },
+          "DRIVER_DISTRACTED_BY": {
+            "type": "string"
+          },
+          "crash_intersection": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Persons"
+    }
+  ]
+}

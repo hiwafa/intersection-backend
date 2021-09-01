@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/intersection-inventories",
+      "handler": "intersection-inventory.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/intersection-inventories/count",
+      "handler": "intersection-inventory.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/intersection-inventories/:id",
+      "handler": "intersection-inventory.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/intersection-inventories",
+      "handler": "intersection-inventory.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/intersection-inventories/:id",
+      "handler": "intersection-inventory.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/intersection-inventories/:id",
+      "handler": "intersection-inventory.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

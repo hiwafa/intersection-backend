@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_emojis_com_demos",
+  "info": {
+    "name": "ComDemo",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "size": {
+      "type": "biginteger"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vehciles",
+  "info": {
+    "name": "VEHCILES"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CRASH_ID": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "VEHICLE_ID": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "VEHICLE_COLOR": {
+      "type": "string"
+    },
+    "VEHICLE_MAKE": {
+      "type": "string"
+    },
+    "VEHICLE_MODEL": {
+      "type": "string"
+    },
+    "VEHICLE_TYPE": {
+      "type": "string"
+    },
+    "VEHCILE_VIN": {
+      "type": "string"
+    },
+    "VEHICLE_OWNER_STATE": {
+      "type": "string"
+    },
+    "crash_intersection": {
+      "model": "crash-intersection"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "single_demos",
+  "info": {
+    "name": "SingleDemo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "details": {
+      "type": "richtext"
+    }
+  }
+}

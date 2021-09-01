@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "intersection_inventories",
+  "info": {
+    "name": "INTERSECTION_INVENTORY"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "INTERSECTION_ID": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "INTERSECTION_NAME": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "LEG_NUMBER": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "INTERSECTION_TYPE": {
+      "type": "string"
+    },
+    "NUMBER_OF_APPRAOCHES": {
+      "type": "biginteger"
+    },
+    "AADT": {
+      "type": "biginteger"
+    },
+    "INTERSECTION_TRAFFIC_CONTROL": {
+      "type": "string"
+    }
+  }
+}

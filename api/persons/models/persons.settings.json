@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "persons",
+  "info": {
+    "name": "PERSONS"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CRASH_ID": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "PERSON_ID": {
+      "type": "biginteger",
+      "unique": true,
+      "required": true
+    },
+    "VEHICLE_ID": {
+      "type": "biginteger"
+    },
+    "AGE": {
+      "type": "biginteger"
+    },
+    "DATE_OF_BIRTH": {
+      "type": "date"
+    },
+    "GENDER": {
+      "type": "string"
+    },
+    "DRIVER_LICENSE_STATE": {
+      "type": "string"
+    },
+    "DRIVER_CONDITION": {
+      "type": "string"
+    },
+    "DRIVER_DISTRACTED_BY": {
+      "type": "string"
+    },
+    "crash_intersection": {
+      "model": "crash-intersection"
+    }
+  }
+}

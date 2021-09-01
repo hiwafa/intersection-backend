@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/crash-intersections",
+      "handler": "crash-intersection.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/crash-intersections/count",
+      "handler": "crash-intersection.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/crash-intersections/:id",
+      "handler": "crash-intersection.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/crash-intersections",
+      "handler": "crash-intersection.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/crash-intersections/:id",
+      "handler": "crash-intersection.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/crash-intersections/:id",
+      "handler": "crash-intersection.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
