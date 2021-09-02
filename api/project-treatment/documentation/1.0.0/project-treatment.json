@@ -619,6 +619,12 @@
               "TREATMENT_COST": {
                 "type": "number"
               },
+              "project_treatments": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -718,6 +724,12 @@
               },
               "PROGRAM_NUMBER": {
                 "type": "string"
+              },
+              "project_treatments": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"

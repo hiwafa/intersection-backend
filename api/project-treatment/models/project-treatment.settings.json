@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "project_treatments",
   "info": {
-    "name": "PROJECT_TREATMENT"
+    "name": "PROJECT_TREATMENT",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -50,10 +51,12 @@
       "type": "biginteger"
     },
     "treatment": {
-      "model": "treatment"
+      "model": "treatment",
+      "via": "project_treatments"
     },
     "project": {
-      "model": "project"
+      "model": "project",
+      "via": "project_treatments"
     }
   }
 }

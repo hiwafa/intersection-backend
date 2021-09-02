@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "vehciles",
   "info": {
-    "name": "VEHCILES"
+    "name": "VEHCILES",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -40,7 +41,8 @@
       "type": "string"
     },
     "crash_intersection": {
-      "model": "crash-intersection"
+      "model": "crash-intersection",
+      "via": "vehciles"
     }
   }
 }

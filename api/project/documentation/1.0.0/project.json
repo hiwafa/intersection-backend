@@ -609,6 +609,70 @@
           "PROGRAM_NUMBER": {
             "type": "string"
           },
+          "project_treatments": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "TREATMENT_ID",
+                "PROJECT_ID",
+                "PROJECT_TREATMENT_ID"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "TREATMENT_ID": {
+                  "type": "integer"
+                },
+                "PROJECT_ID": {
+                  "type": "integer"
+                },
+                "PROJECT_TREATMENT_ID": {
+                  "type": "integer"
+                },
+                "SERVICE_LIFE": {
+                  "type": "integer"
+                },
+                "CRF": {
+                  "type": "number"
+                },
+                "CMF": {
+                  "type": "number"
+                },
+                "SALVAGE_PERCENT": {
+                  "type": "number"
+                },
+                "INTEREST_RATE": {
+                  "type": "number"
+                },
+                "TOTAL_TREATMENT_COST": {
+                  "type": "integer"
+                },
+                "OM_COST": {
+                  "type": "integer"
+                },
+                "TREATMENT_COST": {
+                  "type": "integer"
+                },
+                "treatment": {
+                  "type": "string"
+                },
+                "project": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -705,6 +769,12 @@
           },
           "PROGRAM_NUMBER": {
             "type": "string"
+          },
+          "project_treatments": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

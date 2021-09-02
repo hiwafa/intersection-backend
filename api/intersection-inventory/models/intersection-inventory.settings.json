@@ -37,6 +37,10 @@
     },
     "INTERSECTION_TRAFFIC_CONTROL": {
       "type": "string"
+    },
+    "crash_intersections": {
+      "via": "intersection_inventory",
+      "collection": "crash-intersection"
     }
   }
 }

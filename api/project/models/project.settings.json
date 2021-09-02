@@ -92,6 +92,10 @@
     },
     "PROGRAM_NUMBER": {
       "type": "string"
+    },
+    "project_treatments": {
+      "via": "project",
+      "collection": "project-treatment"
     }
   }
 }

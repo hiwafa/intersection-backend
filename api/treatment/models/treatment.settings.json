@@ -53,6 +53,10 @@
     },
     "TREATMENT_COST": {
       "type": "decimal"
+    },
+    "project_treatments": {
+      "via": "treatment",
+      "collection": "project-treatment"
     }
   }
 }
