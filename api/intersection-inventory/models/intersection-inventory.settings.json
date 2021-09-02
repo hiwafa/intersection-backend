@@ -20,7 +20,7 @@
     "LEG_NUMBER": {
       "type": "biginteger",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "INTERSECTION_TYPE": {
       "type": "string"
