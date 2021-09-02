@@ -635,16 +635,12 @@
           "project": {
             "required": [
               "id",
-              "PROJECT_ID",
               "PROJECT_NAME",
               "PROJECT_STATUS"
             ],
             "properties": {
               "id": {
                 "type": "string"
-              },
-              "PROJECT_ID": {
-                "type": "integer"
               },
               "PROJECT_NAME": {
                 "type": "string"
