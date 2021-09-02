@@ -88,8 +88,8 @@
       "type": "biginteger"
     },
     "intersection_inventory": {
-      "model": "intersection-inventory",
-      "via": "crash_intersections"
+      "via": "crash_intersections",
+      "model": "intersection-inventory"
     },
     "persons": {
       "via": "crash_intersection",

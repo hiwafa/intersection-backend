@@ -612,16 +612,12 @@
           "intersection_inventory": {
             "required": [
               "id",
-              "INTERSECTION_ID",
               "INTERSECTION_NAME",
               "LEG_NUMBER"
             ],
             "properties": {
               "id": {
                 "type": "string"
-              },
-              "INTERSECTION_ID": {
-                "type": "integer"
               },
               "INTERSECTION_NAME": {
                 "type": "string"

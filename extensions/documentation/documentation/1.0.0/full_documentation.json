@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/02/2021 5:42:04 PM"
+    "x-generation-date": "09/02/2021 5:54:44 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6287,16 +6287,12 @@
           "intersection_inventory": {
             "required": [
               "id",
-              "INTERSECTION_ID",
               "INTERSECTION_NAME",
               "LEG_NUMBER"
             ],
             "properties": {
               "id": {
                 "type": "string"
-              },
-              "INTERSECTION_ID": {
-                "type": "integer"
               },
               "INTERSECTION_NAME": {
                 "type": "string"
@@ -6552,16 +6548,12 @@
       "Intersection-inventory": {
         "required": [
           "id",
-          "INTERSECTION_ID",
           "INTERSECTION_NAME",
           "LEG_NUMBER"
         ],
         "properties": {
           "id": {
             "type": "string"
-          },
-          "INTERSECTION_ID": {
-            "type": "integer"
           },
           "INTERSECTION_NAME": {
             "type": "string"
@@ -6699,14 +6691,10 @@
       },
       "NewIntersection-inventory": {
         "required": [
-          "INTERSECTION_ID",
           "INTERSECTION_NAME",
           "LEG_NUMBER"
         ],
         "properties": {
-          "INTERSECTION_ID": {
-            "type": "integer"
-          },
           "INTERSECTION_NAME": {
             "type": "string"
           },

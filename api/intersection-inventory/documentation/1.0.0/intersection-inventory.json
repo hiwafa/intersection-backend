@@ -530,16 +530,12 @@
       "Intersection-inventory": {
         "required": [
           "id",
-          "INTERSECTION_ID",
           "INTERSECTION_NAME",
           "LEG_NUMBER"
         ],
         "properties": {
           "id": {
             "type": "string"
-          },
-          "INTERSECTION_ID": {
-            "type": "integer"
           },
           "INTERSECTION_NAME": {
             "type": "string"
@@ -677,14 +673,10 @@
       },
       "NewIntersection-inventory": {
         "required": [
-          "INTERSECTION_ID",
           "INTERSECTION_NAME",
           "LEG_NUMBER"
         ],
         "properties": {
-          "INTERSECTION_ID": {
-            "type": "integer"
-          },
           "INTERSECTION_NAME": {
             "type": "string"
           },
