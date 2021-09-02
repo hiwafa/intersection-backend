@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "treatments",
   "info": {
-    "name": "TREATMENT"
+    "name": "TREATMENT",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "TREATMENT_ID": {
-      "type": "biginteger",
-      "unique": true,
-      "required": true
-    },
     "TREATMENT_NAME": {
       "type": "string",
       "unique": true,

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/02/2021 5:42:04 PM"
+    "x-generation-date": "09/02/2021 6:13:38 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6205,7 +6205,6 @@
       "Crash-intersection": {
         "required": [
           "id",
-          "CRASH_ID",
           "CRASH_RECORD_NBR",
           "DATE_OF_CRASH",
           "SEVERITY"
@@ -6214,14 +6213,8 @@
           "id": {
             "type": "string"
           },
-          "CRASH_ID": {
-            "type": "integer"
-          },
           "CRASH_RECORD_NBR": {
             "type": "string"
-          },
-          "INTERSECTION_ID": {
-            "type": "integer"
           },
           "COUNTY": {
             "type": "string"
@@ -6287,16 +6280,12 @@
           "intersection_inventory": {
             "required": [
               "id",
-              "INTERSECTION_ID",
               "INTERSECTION_NAME",
               "LEG_NUMBER"
             ],
             "properties": {
               "id": {
                 "type": "string"
-              },
-              "INTERSECTION_ID": {
-                "type": "integer"
               },
               "INTERSECTION_NAME": {
                 "type": "string"
@@ -6337,22 +6326,11 @@
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "CRASH_ID",
-                "PERSON_ID"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
-                },
-                "CRASH_ID": {
-                  "type": "integer"
-                },
-                "PERSON_ID": {
-                  "type": "integer"
-                },
-                "VEHICLE_ID": {
-                  "type": "integer"
                 },
                 "AGE": {
                   "type": "integer"
@@ -6375,6 +6353,12 @@
                 "crash_intersection": {
                   "type": "string"
                 },
+                "vehciles": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -6391,19 +6375,11 @@
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "CRASH_ID",
-                "VEHICLE_ID"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
-                },
-                "CRASH_ID": {
-                  "type": "integer"
-                },
-                "VEHICLE_ID": {
-                  "type": "integer"
                 },
                 "VEHICLE_COLOR": {
                   "type": "string"
@@ -6426,6 +6402,9 @@
                 "crash_intersection": {
                   "type": "string"
                 },
+                "person": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -6446,20 +6425,13 @@
       },
       "NewCrash-intersection": {
         "required": [
-          "CRASH_ID",
           "CRASH_RECORD_NBR",
           "DATE_OF_CRASH",
           "SEVERITY"
         ],
         "properties": {
-          "CRASH_ID": {
-            "type": "integer"
-          },
           "CRASH_RECORD_NBR": {
             "type": "string"
-          },
-          "INTERSECTION_ID": {
-            "type": "integer"
           },
           "COUNTY": {
             "type": "string"
@@ -6552,16 +6524,12 @@
       "Intersection-inventory": {
         "required": [
           "id",
-          "INTERSECTION_ID",
           "INTERSECTION_NAME",
           "LEG_NUMBER"
         ],
         "properties": {
           "id": {
             "type": "string"
-          },
-          "INTERSECTION_ID": {
-            "type": "integer"
           },
           "INTERSECTION_NAME": {
             "type": "string"
@@ -6586,7 +6554,6 @@
             "items": {
               "required": [
                 "id",
-                "CRASH_ID",
                 "CRASH_RECORD_NBR",
                 "DATE_OF_CRASH",
                 "SEVERITY"
@@ -6595,14 +6562,8 @@
                 "id": {
                   "type": "string"
                 },
-                "CRASH_ID": {
-                  "type": "integer"
-                },
                 "CRASH_RECORD_NBR": {
                   "type": "string"
-                },
-                "INTERSECTION_ID": {
-                  "type": "integer"
                 },
                 "COUNTY": {
                   "type": "string"
@@ -6699,14 +6660,10 @@
       },
       "NewIntersection-inventory": {
         "required": [
-          "INTERSECTION_ID",
           "INTERSECTION_NAME",
           "LEG_NUMBER"
         ],
         "properties": {
-          "INTERSECTION_ID": {
-            "type": "integer"
-          },
           "INTERSECTION_NAME": {
             "type": "string"
           },
@@ -6745,22 +6702,11 @@
       },
       "Persons": {
         "required": [
-          "id",
-          "CRASH_ID",
-          "PERSON_ID"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
-          },
-          "CRASH_ID": {
-            "type": "integer"
-          },
-          "PERSON_ID": {
-            "type": "integer"
-          },
-          "VEHICLE_ID": {
-            "type": "integer"
           },
           "AGE": {
             "type": "integer"
@@ -6784,7 +6730,6 @@
           "crash_intersection": {
             "required": [
               "id",
-              "CRASH_ID",
               "CRASH_RECORD_NBR",
               "DATE_OF_CRASH",
               "SEVERITY"
@@ -6793,14 +6738,8 @@
               "id": {
                 "type": "string"
               },
-              "CRASH_ID": {
-                "type": "integer"
-              },
               "CRASH_RECORD_NBR": {
                 "type": "string"
-              },
-              "INTERSECTION_ID": {
-                "type": "integer"
               },
               "COUNTY": {
                 "type": "string"
@@ -6888,6 +6827,52 @@
               }
             }
           },
+          "vehciles": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "VEHICLE_COLOR": {
+                  "type": "string"
+                },
+                "VEHICLE_MAKE": {
+                  "type": "string"
+                },
+                "VEHICLE_MODEL": {
+                  "type": "string"
+                },
+                "VEHICLE_TYPE": {
+                  "type": "string"
+                },
+                "VEHCILE_VIN": {
+                  "type": "string"
+                },
+                "VEHICLE_OWNER_STATE": {
+                  "type": "string"
+                },
+                "crash_intersection": {
+                  "type": "string"
+                },
+                "person": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6895,20 +6880,7 @@
         }
       },
       "NewPersons": {
-        "required": [
-          "CRASH_ID",
-          "PERSON_ID"
-        ],
         "properties": {
-          "CRASH_ID": {
-            "type": "integer"
-          },
-          "PERSON_ID": {
-            "type": "integer"
-          },
-          "VEHICLE_ID": {
-            "type": "integer"
-          },
           "AGE": {
             "type": "integer"
           },
@@ -6931,6 +6903,12 @@
           "crash_intersection": {
             "type": "string"
           },
+          "vehciles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6945,23 +6923,11 @@
       },
       "Project-treatment": {
         "required": [
-          "id",
-          "TREATMENT_ID",
-          "PROJECT_ID",
-          "PROJECT_TREATMENT_ID"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
-          },
-          "TREATMENT_ID": {
-            "type": "integer"
-          },
-          "PROJECT_ID": {
-            "type": "integer"
-          },
-          "PROJECT_TREATMENT_ID": {
-            "type": "integer"
           },
           "SERVICE_LIFE": {
             "type": "integer"
@@ -6990,7 +6956,6 @@
           "treatment": {
             "required": [
               "id",
-              "TREATMENT_ID",
               "TREATMENT_NAME",
               "TREATMENT_TYPE",
               "SERVICE_LIFE",
@@ -7001,9 +6966,6 @@
             "properties": {
               "id": {
                 "type": "string"
-              },
-              "TREATMENT_ID": {
-                "type": "integer"
               },
               "TREATMENT_NAME": {
                 "type": "string"
@@ -7055,16 +7017,12 @@
           "project": {
             "required": [
               "id",
-              "PROJECT_ID",
               "PROJECT_NAME",
               "PROJECT_STATUS"
             ],
             "properties": {
               "id": {
                 "type": "string"
-              },
-              "PROJECT_ID": {
-                "type": "integer"
               },
               "PROJECT_NAME": {
                 "type": "string"
@@ -7165,21 +7123,7 @@
         }
       },
       "NewProject-treatment": {
-        "required": [
-          "TREATMENT_ID",
-          "PROJECT_ID",
-          "PROJECT_TREATMENT_ID"
-        ],
         "properties": {
-          "TREATMENT_ID": {
-            "type": "integer"
-          },
-          "PROJECT_ID": {
-            "type": "integer"
-          },
-          "PROJECT_TREATMENT_ID": {
-            "type": "integer"
-          },
           "SERVICE_LIFE": {
             "type": "integer"
           },
@@ -7225,16 +7169,12 @@
       "Project": {
         "required": [
           "id",
-          "PROJECT_ID",
           "PROJECT_NAME",
           "PROJECT_STATUS"
         ],
         "properties": {
           "id": {
             "type": "string"
-          },
-          "PROJECT_ID": {
-            "type": "integer"
           },
           "PROJECT_NAME": {
             "type": "string"
@@ -7321,23 +7261,11 @@
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "TREATMENT_ID",
-                "PROJECT_ID",
-                "PROJECT_TREATMENT_ID"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
-                },
-                "TREATMENT_ID": {
-                  "type": "integer"
-                },
-                "PROJECT_ID": {
-                  "type": "integer"
-                },
-                "PROJECT_TREATMENT_ID": {
-                  "type": "integer"
                 },
                 "SERVICE_LIFE": {
                   "type": "integer"
@@ -7389,14 +7317,10 @@
       },
       "NewProject": {
         "required": [
-          "PROJECT_ID",
           "PROJECT_NAME",
           "PROJECT_STATUS"
         ],
         "properties": {
-          "PROJECT_ID": {
-            "type": "integer"
-          },
           "PROJECT_NAME": {
             "type": "string"
           },
@@ -7539,7 +7463,6 @@
       "Treatment": {
         "required": [
           "id",
-          "TREATMENT_ID",
           "TREATMENT_NAME",
           "TREATMENT_TYPE",
           "SERVICE_LIFE",
@@ -7550,9 +7473,6 @@
         "properties": {
           "id": {
             "type": "string"
-          },
-          "TREATMENT_ID": {
-            "type": "integer"
           },
           "TREATMENT_NAME": {
             "type": "string"
@@ -7588,23 +7508,11 @@
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "TREATMENT_ID",
-                "PROJECT_ID",
-                "PROJECT_TREATMENT_ID"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
-                },
-                "TREATMENT_ID": {
-                  "type": "integer"
-                },
-                "PROJECT_ID": {
-                  "type": "integer"
-                },
-                "PROJECT_TREATMENT_ID": {
-                  "type": "integer"
                 },
                 "SERVICE_LIFE": {
                   "type": "integer"
@@ -7656,7 +7564,6 @@
       },
       "NewTreatment": {
         "required": [
-          "TREATMENT_ID",
           "TREATMENT_NAME",
           "TREATMENT_TYPE",
           "SERVICE_LIFE",
@@ -7665,9 +7572,6 @@
           "TOTAL_TREATMENT_COST"
         ],
         "properties": {
-          "TREATMENT_ID": {
-            "type": "integer"
-          },
           "TREATMENT_NAME": {
             "type": "string"
           },
@@ -7718,19 +7622,11 @@
       },
       "Vehciles": {
         "required": [
-          "id",
-          "CRASH_ID",
-          "VEHICLE_ID"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
-          },
-          "CRASH_ID": {
-            "type": "integer"
-          },
-          "VEHICLE_ID": {
-            "type": "integer"
           },
           "VEHICLE_COLOR": {
             "type": "string"
@@ -7753,7 +7649,6 @@
           "crash_intersection": {
             "required": [
               "id",
-              "CRASH_ID",
               "CRASH_RECORD_NBR",
               "DATE_OF_CRASH",
               "SEVERITY"
@@ -7762,14 +7657,8 @@
               "id": {
                 "type": "string"
               },
-              "CRASH_ID": {
-                "type": "integer"
-              },
               "CRASH_RECORD_NBR": {
                 "type": "string"
-              },
-              "INTERSECTION_ID": {
-                "type": "integer"
               },
               "COUNTY": {
                 "type": "string"
@@ -7857,6 +7746,52 @@
               }
             }
           },
+          "person": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "AGE": {
+                "type": "integer"
+              },
+              "DATE_OF_BIRTH": {
+                "type": "string"
+              },
+              "GENDER": {
+                "type": "string"
+              },
+              "DRIVER_LICENSE_STATE": {
+                "type": "string"
+              },
+              "DRIVER_CONDITION": {
+                "type": "string"
+              },
+              "DRIVER_DISTRACTED_BY": {
+                "type": "string"
+              },
+              "crash_intersection": {
+                "type": "string"
+              },
+              "vehciles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -7864,17 +7799,7 @@
         }
       },
       "NewVehciles": {
-        "required": [
-          "CRASH_ID",
-          "VEHICLE_ID"
-        ],
         "properties": {
-          "CRASH_ID": {
-            "type": "integer"
-          },
-          "VEHICLE_ID": {
-            "type": "integer"
-          },
           "VEHICLE_COLOR": {
             "type": "string"
           },
@@ -7894,6 +7819,9 @@
             "type": "string"
           },
           "crash_intersection": {
+            "type": "string"
+          },
+          "person": {
             "type": "string"
           },
           "published_at": {

@@ -516,22 +516,11 @@
     "schemas": {
       "Persons": {
         "required": [
-          "id",
-          "CRASH_ID",
-          "PERSON_ID"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
-          },
-          "CRASH_ID": {
-            "type": "integer"
-          },
-          "PERSON_ID": {
-            "type": "integer"
-          },
-          "VEHICLE_ID": {
-            "type": "integer"
           },
           "AGE": {
             "type": "integer"
@@ -555,7 +544,6 @@
           "crash_intersection": {
             "required": [
               "id",
-              "CRASH_ID",
               "CRASH_RECORD_NBR",
               "DATE_OF_CRASH",
               "SEVERITY"
@@ -564,14 +552,8 @@
               "id": {
                 "type": "string"
               },
-              "CRASH_ID": {
-                "type": "integer"
-              },
               "CRASH_RECORD_NBR": {
                 "type": "string"
-              },
-              "INTERSECTION_ID": {
-                "type": "integer"
               },
               "COUNTY": {
                 "type": "string"
@@ -659,6 +641,52 @@
               }
             }
           },
+          "vehciles": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "VEHICLE_COLOR": {
+                  "type": "string"
+                },
+                "VEHICLE_MAKE": {
+                  "type": "string"
+                },
+                "VEHICLE_MODEL": {
+                  "type": "string"
+                },
+                "VEHICLE_TYPE": {
+                  "type": "string"
+                },
+                "VEHCILE_VIN": {
+                  "type": "string"
+                },
+                "VEHICLE_OWNER_STATE": {
+                  "type": "string"
+                },
+                "crash_intersection": {
+                  "type": "string"
+                },
+                "person": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -666,20 +694,7 @@
         }
       },
       "NewPersons": {
-        "required": [
-          "CRASH_ID",
-          "PERSON_ID"
-        ],
         "properties": {
-          "CRASH_ID": {
-            "type": "integer"
-          },
-          "PERSON_ID": {
-            "type": "integer"
-          },
-          "VEHICLE_ID": {
-            "type": "integer"
-          },
           "AGE": {
             "type": "integer"
           },
@@ -701,6 +716,12 @@
           },
           "crash_intersection": {
             "type": "string"
+          },
+          "vehciles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

@@ -517,16 +517,12 @@
       "Project": {
         "required": [
           "id",
-          "PROJECT_ID",
           "PROJECT_NAME",
           "PROJECT_STATUS"
         ],
         "properties": {
           "id": {
             "type": "string"
-          },
-          "PROJECT_ID": {
-            "type": "integer"
           },
           "PROJECT_NAME": {
             "type": "string"
@@ -613,23 +609,11 @@
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "TREATMENT_ID",
-                "PROJECT_ID",
-                "PROJECT_TREATMENT_ID"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
-                },
-                "TREATMENT_ID": {
-                  "type": "integer"
-                },
-                "PROJECT_ID": {
-                  "type": "integer"
-                },
-                "PROJECT_TREATMENT_ID": {
-                  "type": "integer"
                 },
                 "SERVICE_LIFE": {
                   "type": "integer"
@@ -681,14 +665,10 @@
       },
       "NewProject": {
         "required": [
-          "PROJECT_ID",
           "PROJECT_NAME",
           "PROJECT_STATUS"
         ],
         "properties": {
-          "PROJECT_ID": {
-            "type": "integer"
-          },
           "PROJECT_NAME": {
             "type": "string"
           },

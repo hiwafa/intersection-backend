@@ -530,16 +530,12 @@
       "Intersection-inventory": {
         "required": [
           "id",
-          "INTERSECTION_ID",
           "INTERSECTION_NAME",
           "LEG_NUMBER"
         ],
         "properties": {
           "id": {
             "type": "string"
-          },
-          "INTERSECTION_ID": {
-            "type": "integer"
           },
           "INTERSECTION_NAME": {
             "type": "string"
@@ -564,7 +560,6 @@
             "items": {
               "required": [
                 "id",
-                "CRASH_ID",
                 "CRASH_RECORD_NBR",
                 "DATE_OF_CRASH",
                 "SEVERITY"
@@ -573,14 +568,8 @@
                 "id": {
                   "type": "string"
                 },
-                "CRASH_ID": {
-                  "type": "integer"
-                },
                 "CRASH_RECORD_NBR": {
                   "type": "string"
-                },
-                "INTERSECTION_ID": {
-                  "type": "integer"
                 },
                 "COUNTY": {
                   "type": "string"
@@ -677,14 +666,10 @@
       },
       "NewIntersection-inventory": {
         "required": [
-          "INTERSECTION_ID",
           "INTERSECTION_NAME",
           "LEG_NUMBER"
         ],
         "properties": {
-          "INTERSECTION_ID": {
-            "type": "integer"
-          },
           "INTERSECTION_NAME": {
             "type": "string"
           },

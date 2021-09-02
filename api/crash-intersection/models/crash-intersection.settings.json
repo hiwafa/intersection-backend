@@ -12,18 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "CRASH_ID": {
-      "type": "biginteger",
-      "required": true,
-      "unique": true
-    },
     "CRASH_RECORD_NBR": {
       "type": "string",
       "unique": true,
       "required": true
-    },
-    "INTERSECTION_ID": {
-      "type": "biginteger"
     },
     "COUNTY": {
       "type": "string"
@@ -88,8 +80,8 @@
       "type": "biginteger"
     },
     "intersection_inventory": {
-      "model": "intersection-inventory",
-      "via": "crash_intersections"
+      "via": "crash_intersections",
+      "model": "intersection-inventory"
     },
     "persons": {
       "via": "crash_intersection",

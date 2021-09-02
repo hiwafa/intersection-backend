@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "projects",
   "info": {
-    "name": "PROJECT"
+    "name": "PROJECT",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "PROJECT_ID": {
-      "type": "biginteger",
-      "unique": true,
-      "required": true
-    },
     "PROJECT_NAME": {
       "type": "string",
       "required": true

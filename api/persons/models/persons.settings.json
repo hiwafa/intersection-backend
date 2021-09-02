@@ -12,19 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "CRASH_ID": {
-      "type": "biginteger",
-      "required": true,
-      "unique": true
-    },
-    "PERSON_ID": {
-      "type": "biginteger",
-      "unique": true,
-      "required": true
-    },
-    "VEHICLE_ID": {
-      "type": "biginteger"
-    },
     "AGE": {
       "type": "biginteger"
     },
@@ -44,8 +31,12 @@
       "type": "string"
     },
     "crash_intersection": {
-      "model": "crash-intersection",
-      "via": "persons"
+      "via": "persons",
+      "model": "crash-intersection"
+    },
+    "vehciles": {
+      "collection": "vehciles",
+      "via": "person"
     }
   }
 }

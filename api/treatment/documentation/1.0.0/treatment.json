@@ -517,7 +517,6 @@
       "Treatment": {
         "required": [
           "id",
-          "TREATMENT_ID",
           "TREATMENT_NAME",
           "TREATMENT_TYPE",
           "SERVICE_LIFE",
@@ -528,9 +527,6 @@
         "properties": {
           "id": {
             "type": "string"
-          },
-          "TREATMENT_ID": {
-            "type": "integer"
           },
           "TREATMENT_NAME": {
             "type": "string"
@@ -566,23 +562,11 @@
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "TREATMENT_ID",
-                "PROJECT_ID",
-                "PROJECT_TREATMENT_ID"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
-                },
-                "TREATMENT_ID": {
-                  "type": "integer"
-                },
-                "PROJECT_ID": {
-                  "type": "integer"
-                },
-                "PROJECT_TREATMENT_ID": {
-                  "type": "integer"
                 },
                 "SERVICE_LIFE": {
                   "type": "integer"
@@ -634,7 +618,6 @@
       },
       "NewTreatment": {
         "required": [
-          "TREATMENT_ID",
           "TREATMENT_NAME",
           "TREATMENT_TYPE",
           "SERVICE_LIFE",
@@ -643,9 +626,6 @@
           "TOTAL_TREATMENT_COST"
         ],
         "properties": {
-          "TREATMENT_ID": {
-            "type": "integer"
-          },
           "TREATMENT_NAME": {
             "type": "string"
           },
