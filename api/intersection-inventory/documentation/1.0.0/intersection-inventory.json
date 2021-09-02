@@ -559,6 +559,116 @@
           "INTERSECTION_TRAFFIC_CONTROL": {
             "type": "string"
           },
+          "crash_intersections": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "CRASH_ID",
+                "CRASH_RECORD_NBR",
+                "DATE_OF_CRASH",
+                "SEVERITY"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "CRASH_ID": {
+                  "type": "integer"
+                },
+                "CRASH_RECORD_NBR": {
+                  "type": "string"
+                },
+                "INTERSECTION_ID": {
+                  "type": "integer"
+                },
+                "COUNTY": {
+                  "type": "string"
+                },
+                "DISTRICT": {
+                  "type": "string"
+                },
+                "HIGHWAY_CLASS": {
+                  "type": "string"
+                },
+                "DATE_OF_CRASH": {
+                  "type": "string"
+                },
+                "SEVERITY": {
+                  "type": "string"
+                },
+                "COLLISION_TYPE": {
+                  "type": "string"
+                },
+                "LIGHT_CONDITION": {
+                  "type": "string"
+                },
+                "ROAD_SURFACE_TYPE": {
+                  "type": "string"
+                },
+                "ROAD_SURFACE_CONDITION": {
+                  "type": "string"
+                },
+                "WEATHER_CONDITION": {
+                  "type": "string"
+                },
+                "ENVI_CONDITION": {
+                  "type": "string"
+                },
+                "LATITUDE": {
+                  "type": "number"
+                },
+                "LONGITUD": {
+                  "type": "number"
+                },
+                "NUMBER_OF_FATALITIES": {
+                  "type": "integer"
+                },
+                "NUMBER_OF_INJURIES": {
+                  "type": "integer"
+                },
+                "NUMBER_OF_PDO": {
+                  "type": "integer"
+                },
+                "TIME_OF_CRASH": {
+                  "type": "string"
+                },
+                "NUMBER_OF_A_INJURIES": {
+                  "type": "integer"
+                },
+                "NUMBER_OF_B_INJURIES": {
+                  "type": "integer"
+                },
+                "NUMBER_OF_C_INJURIES": {
+                  "type": "integer"
+                },
+                "intersection_inventory": {
+                  "type": "string"
+                },
+                "persons": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "vehciles": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -592,6 +702,12 @@
           },
           "INTERSECTION_TRAFFIC_CONTROL": {
             "type": "string"
+          },
+          "crash_intersections": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

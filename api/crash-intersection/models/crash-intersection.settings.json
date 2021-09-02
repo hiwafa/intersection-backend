@@ -87,8 +87,17 @@
     "NUMBER_OF_C_INJURIES": {
       "type": "biginteger"
     },
-    "CRASH_INVENTORY": {
-      "model": "crash-intersection"
+    "intersection_inventory": {
+      "model": "intersection-inventory",
+      "via": "crash_intersections"
+    },
+    "persons": {
+      "via": "crash_intersection",
+      "collection": "persons"
+    },
+    "vehciles": {
+      "via": "crash_intersection",
+      "collection": "vehciles"
     }
   }
 }

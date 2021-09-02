@@ -633,8 +633,20 @@
               "NUMBER_OF_C_INJURIES": {
                 "type": "integer"
               },
-              "CRASH_INVENTORY": {
+              "intersection_inventory": {
                 "type": "string"
+              },
+              "persons": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "vehciles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"
