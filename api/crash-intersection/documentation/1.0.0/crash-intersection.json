@@ -654,22 +654,11 @@
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "CRASH_ID",
-                "PERSON_ID"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
-                },
-                "CRASH_ID": {
-                  "type": "integer"
-                },
-                "PERSON_ID": {
-                  "type": "integer"
-                },
-                "VEHICLE_ID": {
-                  "type": "integer"
                 },
                 "AGE": {
                   "type": "integer"

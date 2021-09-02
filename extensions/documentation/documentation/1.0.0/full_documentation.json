@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/02/2021 6:04:39 PM"
+    "x-generation-date": "09/02/2021 6:06:55 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6329,22 +6329,11 @@
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "CRASH_ID",
-                "PERSON_ID"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
-                },
-                "CRASH_ID": {
-                  "type": "integer"
-                },
-                "PERSON_ID": {
-                  "type": "integer"
-                },
-                "VEHICLE_ID": {
-                  "type": "integer"
                 },
                 "AGE": {
                   "type": "integer"
@@ -6713,22 +6702,11 @@
       },
       "Persons": {
         "required": [
-          "id",
-          "CRASH_ID",
-          "PERSON_ID"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
-          },
-          "CRASH_ID": {
-            "type": "integer"
-          },
-          "PERSON_ID": {
-            "type": "integer"
-          },
-          "VEHICLE_ID": {
-            "type": "integer"
           },
           "AGE": {
             "type": "integer"
@@ -6859,20 +6837,7 @@
         }
       },
       "NewPersons": {
-        "required": [
-          "CRASH_ID",
-          "PERSON_ID"
-        ],
         "properties": {
-          "CRASH_ID": {
-            "type": "integer"
-          },
-          "PERSON_ID": {
-            "type": "integer"
-          },
-          "VEHICLE_ID": {
-            "type": "integer"
-          },
           "AGE": {
             "type": "integer"
           },

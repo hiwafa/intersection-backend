@@ -12,19 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "CRASH_ID": {
-      "type": "biginteger",
-      "required": true,
-      "unique": true
-    },
-    "PERSON_ID": {
-      "type": "biginteger",
-      "unique": true,
-      "required": true
-    },
-    "VEHICLE_ID": {
-      "type": "biginteger"
-    },
     "AGE": {
       "type": "biginteger"
     },
