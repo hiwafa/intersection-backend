@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/02/2021 6:11:45 PM"
+    "x-generation-date": "09/02/2021 6:13:38 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6216,9 +6216,6 @@
           "CRASH_RECORD_NBR": {
             "type": "string"
           },
-          "INTERSECTION_ID": {
-            "type": "integer"
-          },
           "COUNTY": {
             "type": "string"
           },
@@ -6436,9 +6433,6 @@
           "CRASH_RECORD_NBR": {
             "type": "string"
           },
-          "INTERSECTION_ID": {
-            "type": "integer"
-          },
           "COUNTY": {
             "type": "string"
           },
@@ -6570,9 +6564,6 @@
                 },
                 "CRASH_RECORD_NBR": {
                   "type": "string"
-                },
-                "INTERSECTION_ID": {
-                  "type": "integer"
                 },
                 "COUNTY": {
                   "type": "string"
@@ -6749,9 +6740,6 @@
               },
               "CRASH_RECORD_NBR": {
                 "type": "string"
-              },
-              "INTERSECTION_ID": {
-                "type": "integer"
               },
               "COUNTY": {
                 "type": "string"
@@ -7671,9 +7659,6 @@
               },
               "CRASH_RECORD_NBR": {
                 "type": "string"
-              },
-              "INTERSECTION_ID": {
-                "type": "integer"
               },
               "COUNTY": {
                 "type": "string"

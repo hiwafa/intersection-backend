@@ -541,9 +541,6 @@
           "CRASH_RECORD_NBR": {
             "type": "string"
           },
-          "INTERSECTION_ID": {
-            "type": "integer"
-          },
           "COUNTY": {
             "type": "string"
           },
@@ -760,9 +757,6 @@
         "properties": {
           "CRASH_RECORD_NBR": {
             "type": "string"
-          },
-          "INTERSECTION_ID": {
-            "type": "integer"
           },
           "COUNTY": {
             "type": "string"
