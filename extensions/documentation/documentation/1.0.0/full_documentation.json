@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/02/2021 5:59:45 PM"
+    "x-generation-date": "09/02/2021 6:01:00 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6962,7 +6962,6 @@
           "treatment": {
             "required": [
               "id",
-              "TREATMENT_ID",
               "TREATMENT_NAME",
               "TREATMENT_TYPE",
               "SERVICE_LIFE",
@@ -6973,9 +6972,6 @@
             "properties": {
               "id": {
                 "type": "string"
-              },
-              "TREATMENT_ID": {
-                "type": "integer"
               },
               "TREATMENT_NAME": {
                 "type": "string"
@@ -7511,7 +7507,6 @@
       "Treatment": {
         "required": [
           "id",
-          "TREATMENT_ID",
           "TREATMENT_NAME",
           "TREATMENT_TYPE",
           "SERVICE_LIFE",
@@ -7522,9 +7517,6 @@
         "properties": {
           "id": {
             "type": "string"
-          },
-          "TREATMENT_ID": {
-            "type": "integer"
           },
           "TREATMENT_NAME": {
             "type": "string"
@@ -7628,7 +7620,6 @@
       },
       "NewTreatment": {
         "required": [
-          "TREATMENT_ID",
           "TREATMENT_NAME",
           "TREATMENT_TYPE",
           "SERVICE_LIFE",
@@ -7637,9 +7628,6 @@
           "TOTAL_TREATMENT_COST"
         ],
         "properties": {
-          "TREATMENT_ID": {
-            "type": "integer"
-          },
           "TREATMENT_NAME": {
             "type": "string"
           },

@@ -51,8 +51,8 @@
       "type": "biginteger"
     },
     "treatment": {
-      "model": "treatment",
-      "via": "project_treatments"
+      "via": "project_treatments",
+      "model": "treatment"
     },
     "project": {
       "model": "project",
