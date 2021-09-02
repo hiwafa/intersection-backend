@@ -708,19 +708,11 @@
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "CRASH_ID",
-                "VEHICLE_ID"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
-                },
-                "CRASH_ID": {
-                  "type": "integer"
-                },
-                "VEHICLE_ID": {
-                  "type": "integer"
                 },
                 "VEHICLE_COLOR": {
                   "type": "string"

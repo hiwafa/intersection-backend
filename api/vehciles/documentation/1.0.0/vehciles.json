@@ -516,19 +516,11 @@
     "schemas": {
       "Vehciles": {
         "required": [
-          "id",
-          "CRASH_ID",
-          "VEHICLE_ID"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
-          },
-          "CRASH_ID": {
-            "type": "integer"
-          },
-          "VEHICLE_ID": {
-            "type": "integer"
           },
           "VEHICLE_COLOR": {
             "type": "string"
@@ -658,17 +650,7 @@
         }
       },
       "NewVehciles": {
-        "required": [
-          "CRASH_ID",
-          "VEHICLE_ID"
-        ],
         "properties": {
-          "CRASH_ID": {
-            "type": "integer"
-          },
-          "VEHICLE_ID": {
-            "type": "integer"
-          },
           "VEHICLE_COLOR": {
             "type": "string"
           },

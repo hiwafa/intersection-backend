@@ -12,16 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "CRASH_ID": {
-      "type": "biginteger",
-      "required": true,
-      "unique": true
-    },
-    "VEHICLE_ID": {
-      "type": "biginteger",
-      "required": true,
-      "unique": true
-    },
     "VEHICLE_COLOR": {
       "type": "string"
     },
