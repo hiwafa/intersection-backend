@@ -560,7 +560,6 @@
             "items": {
               "required": [
                 "id",
-                "CRASH_ID",
                 "CRASH_RECORD_NBR",
                 "DATE_OF_CRASH",
                 "SEVERITY"
@@ -568,9 +567,6 @@
               "properties": {
                 "id": {
                   "type": "string"
-                },
-                "CRASH_ID": {
-                  "type": "integer"
                 },
                 "CRASH_RECORD_NBR": {
                   "type": "string"

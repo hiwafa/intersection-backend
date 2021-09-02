@@ -44,8 +44,8 @@
       "type": "string"
     },
     "crash_intersection": {
-      "model": "crash-intersection",
-      "via": "persons"
+      "via": "persons",
+      "model": "crash-intersection"
     }
   }
 }

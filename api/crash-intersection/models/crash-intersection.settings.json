@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "CRASH_ID": {
-      "type": "biginteger",
-      "required": true,
-      "unique": true
-    },
     "CRASH_RECORD_NBR": {
       "type": "string",
       "unique": true,
