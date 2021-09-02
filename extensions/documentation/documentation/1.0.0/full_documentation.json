@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/02/2021 6:09:16 PM"
+    "x-generation-date": "09/02/2021 6:11:45 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6935,23 +6935,11 @@
       },
       "Project-treatment": {
         "required": [
-          "id",
-          "TREATMENT_ID",
-          "PROJECT_ID",
-          "PROJECT_TREATMENT_ID"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
-          },
-          "TREATMENT_ID": {
-            "type": "integer"
-          },
-          "PROJECT_ID": {
-            "type": "integer"
-          },
-          "PROJECT_TREATMENT_ID": {
-            "type": "integer"
           },
           "SERVICE_LIFE": {
             "type": "integer"
@@ -7147,21 +7135,7 @@
         }
       },
       "NewProject-treatment": {
-        "required": [
-          "TREATMENT_ID",
-          "PROJECT_ID",
-          "PROJECT_TREATMENT_ID"
-        ],
         "properties": {
-          "TREATMENT_ID": {
-            "type": "integer"
-          },
-          "PROJECT_ID": {
-            "type": "integer"
-          },
-          "PROJECT_TREATMENT_ID": {
-            "type": "integer"
-          },
           "SERVICE_LIFE": {
             "type": "integer"
           },
@@ -7299,23 +7273,11 @@
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "TREATMENT_ID",
-                "PROJECT_ID",
-                "PROJECT_TREATMENT_ID"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
-                },
-                "TREATMENT_ID": {
-                  "type": "integer"
-                },
-                "PROJECT_ID": {
-                  "type": "integer"
-                },
-                "PROJECT_TREATMENT_ID": {
-                  "type": "integer"
                 },
                 "SERVICE_LIFE": {
                   "type": "integer"
@@ -7558,23 +7520,11 @@
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "TREATMENT_ID",
-                "PROJECT_ID",
-                "PROJECT_TREATMENT_ID"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
-                },
-                "TREATMENT_ID": {
-                  "type": "integer"
-                },
-                "PROJECT_ID": {
-                  "type": "integer"
-                },
-                "PROJECT_TREATMENT_ID": {
-                  "type": "integer"
                 },
                 "SERVICE_LIFE": {
                   "type": "integer"

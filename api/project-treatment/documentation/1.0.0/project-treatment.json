@@ -529,23 +529,11 @@
     "schemas": {
       "Project-treatment": {
         "required": [
-          "id",
-          "TREATMENT_ID",
-          "PROJECT_ID",
-          "PROJECT_TREATMENT_ID"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
-          },
-          "TREATMENT_ID": {
-            "type": "integer"
-          },
-          "PROJECT_ID": {
-            "type": "integer"
-          },
-          "PROJECT_TREATMENT_ID": {
-            "type": "integer"
           },
           "SERVICE_LIFE": {
             "type": "integer"
@@ -741,21 +729,7 @@
         }
       },
       "NewProject-treatment": {
-        "required": [
-          "TREATMENT_ID",
-          "PROJECT_ID",
-          "PROJECT_TREATMENT_ID"
-        ],
         "properties": {
-          "TREATMENT_ID": {
-            "type": "integer"
-          },
-          "PROJECT_ID": {
-            "type": "integer"
-          },
-          "PROJECT_TREATMENT_ID": {
-            "type": "integer"
-          },
           "SERVICE_LIFE": {
             "type": "integer"
           },

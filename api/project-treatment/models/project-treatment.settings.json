@@ -12,20 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "TREATMENT_ID": {
-      "type": "biginteger",
-      "required": true,
-      "unique": false
-    },
-    "PROJECT_ID": {
-      "type": "biginteger",
-      "required": true
-    },
-    "PROJECT_TREATMENT_ID": {
-      "type": "biginteger",
-      "required": true,
-      "unique": true
-    },
     "SERVICE_LIFE": {
       "type": "biginteger"
     },
