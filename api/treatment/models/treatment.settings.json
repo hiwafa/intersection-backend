@@ -20,7 +20,7 @@
     "TREATMENT_TYPE": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "SERVICE_LIFE": {
       "type": "biginteger",
