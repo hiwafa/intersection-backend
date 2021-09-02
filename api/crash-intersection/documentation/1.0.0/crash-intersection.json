@@ -681,6 +681,12 @@
                 "crash_intersection": {
                   "type": "string"
                 },
+                "vehciles": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -722,6 +728,9 @@
                   "type": "string"
                 },
                 "crash_intersection": {
+                  "type": "string"
+                },
+                "person": {
                   "type": "string"
                 },
                 "published_at": {

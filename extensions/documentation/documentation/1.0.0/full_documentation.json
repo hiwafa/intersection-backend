@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/02/2021 6:06:55 PM"
+    "x-generation-date": "09/02/2021 6:09:16 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6356,6 +6356,12 @@
                 "crash_intersection": {
                   "type": "string"
                 },
+                "vehciles": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -6397,6 +6403,9 @@
                   "type": "string"
                 },
                 "crash_intersection": {
+                  "type": "string"
+                },
+                "person": {
                   "type": "string"
                 },
                 "published_at": {
@@ -6830,6 +6839,52 @@
               }
             }
           },
+          "vehciles": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "VEHICLE_COLOR": {
+                  "type": "string"
+                },
+                "VEHICLE_MAKE": {
+                  "type": "string"
+                },
+                "VEHICLE_MODEL": {
+                  "type": "string"
+                },
+                "VEHICLE_TYPE": {
+                  "type": "string"
+                },
+                "VEHCILE_VIN": {
+                  "type": "string"
+                },
+                "VEHICLE_OWNER_STATE": {
+                  "type": "string"
+                },
+                "crash_intersection": {
+                  "type": "string"
+                },
+                "person": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6859,6 +6914,12 @@
           },
           "crash_intersection": {
             "type": "string"
+          },
+          "vehciles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
@@ -7750,6 +7811,52 @@
               }
             }
           },
+          "person": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "AGE": {
+                "type": "integer"
+              },
+              "DATE_OF_BIRTH": {
+                "type": "string"
+              },
+              "GENDER": {
+                "type": "string"
+              },
+              "DRIVER_LICENSE_STATE": {
+                "type": "string"
+              },
+              "DRIVER_CONDITION": {
+                "type": "string"
+              },
+              "DRIVER_DISTRACTED_BY": {
+                "type": "string"
+              },
+              "crash_intersection": {
+                "type": "string"
+              },
+              "vehciles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -7777,6 +7884,9 @@
             "type": "string"
           },
           "crash_intersection": {
+            "type": "string"
+          },
+          "person": {
             "type": "string"
           },
           "published_at": {

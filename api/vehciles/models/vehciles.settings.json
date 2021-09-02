@@ -33,6 +33,10 @@
     "crash_intersection": {
       "via": "vehciles",
       "model": "crash-intersection"
+    },
+    "person": {
+      "via": "vehciles",
+      "model": "persons"
     }
   }
 }
