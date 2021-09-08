@@ -622,9 +622,7 @@
           },
           "project": {
             "required": [
-              "id",
-              "PROJECT_NAME",
-              "PROJECT_STATUS"
+              "id"
             ],
             "properties": {
               "id": {
@@ -641,9 +639,6 @@
               },
               "PROJECT_SUBPHASE": {
                 "type": "string"
-              },
-              "INTERSECTION_ID": {
-                "type": "integer"
               },
               "CRASH_COUNT": {
                 "type": "integer"
@@ -710,6 +705,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "INTERSECTION": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"

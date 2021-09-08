@@ -516,9 +516,7 @@
     "schemas": {
       "Project": {
         "required": [
-          "id",
-          "PROJECT_NAME",
-          "PROJECT_STATUS"
+          "id"
         ],
         "properties": {
           "id": {
@@ -531,13 +529,11 @@
             "type": "string"
           },
           "PROJECT_STATUS": {
-            "type": "string"
+            "type": "string",
+            "default": "Initiation"
           },
           "PROJECT_SUBPHASE": {
             "type": "string"
-          },
-          "INTERSECTION_ID": {
-            "type": "integer"
           },
           "CRASH_COUNT": {
             "type": "integer"
@@ -657,6 +653,51 @@
               }
             }
           },
+          "INTERSECTION": {
+            "required": [
+              "id",
+              "INTERSECTION_NAME",
+              "LEG_NUMBER"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "INTERSECTION_NAME": {
+                "type": "string"
+              },
+              "LEG_NUMBER": {
+                "type": "integer"
+              },
+              "INTERSECTION_TYPE": {
+                "type": "string"
+              },
+              "NUMBER_OF_APPRAOCHES": {
+                "type": "integer"
+              },
+              "AADT": {
+                "type": "integer"
+              },
+              "INTERSECTION_TRAFFIC_CONTROL": {
+                "type": "string"
+              },
+              "crash_intersections": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -664,10 +705,6 @@
         }
       },
       "NewProject": {
-        "required": [
-          "PROJECT_NAME",
-          "PROJECT_STATUS"
-        ],
         "properties": {
           "PROJECT_NAME": {
             "type": "string"
@@ -676,13 +713,11 @@
             "type": "string"
           },
           "PROJECT_STATUS": {
-            "type": "string"
+            "type": "string",
+            "default": "Initiation"
           },
           "PROJECT_SUBPHASE": {
             "type": "string"
-          },
-          "INTERSECTION_ID": {
-            "type": "integer"
           },
           "CRASH_COUNT": {
             "type": "integer"
@@ -755,6 +790,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "INTERSECTION": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

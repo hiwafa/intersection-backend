@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/02/2021 6:13:38 PM"
+    "x-generation-date": "09/08/2021 10:49:51 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7016,9 +7016,7 @@
           },
           "project": {
             "required": [
-              "id",
-              "PROJECT_NAME",
-              "PROJECT_STATUS"
+              "id"
             ],
             "properties": {
               "id": {
@@ -7035,9 +7033,6 @@
               },
               "PROJECT_SUBPHASE": {
                 "type": "string"
-              },
-              "INTERSECTION_ID": {
-                "type": "integer"
               },
               "CRASH_COUNT": {
                 "type": "integer"
@@ -7105,6 +7100,9 @@
                   "type": "string"
                 }
               },
+              "INTERSECTION": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -7168,9 +7166,7 @@
       },
       "Project": {
         "required": [
-          "id",
-          "PROJECT_NAME",
-          "PROJECT_STATUS"
+          "id"
         ],
         "properties": {
           "id": {
@@ -7183,13 +7179,11 @@
             "type": "string"
           },
           "PROJECT_STATUS": {
-            "type": "string"
+            "type": "string",
+            "default": "Initiation"
           },
           "PROJECT_SUBPHASE": {
             "type": "string"
-          },
-          "INTERSECTION_ID": {
-            "type": "integer"
           },
           "CRASH_COUNT": {
             "type": "integer"
@@ -7309,6 +7303,51 @@
               }
             }
           },
+          "INTERSECTION": {
+            "required": [
+              "id",
+              "INTERSECTION_NAME",
+              "LEG_NUMBER"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "INTERSECTION_NAME": {
+                "type": "string"
+              },
+              "LEG_NUMBER": {
+                "type": "integer"
+              },
+              "INTERSECTION_TYPE": {
+                "type": "string"
+              },
+              "NUMBER_OF_APPRAOCHES": {
+                "type": "integer"
+              },
+              "AADT": {
+                "type": "integer"
+              },
+              "INTERSECTION_TRAFFIC_CONTROL": {
+                "type": "string"
+              },
+              "crash_intersections": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -7316,10 +7355,6 @@
         }
       },
       "NewProject": {
-        "required": [
-          "PROJECT_NAME",
-          "PROJECT_STATUS"
-        ],
         "properties": {
           "PROJECT_NAME": {
             "type": "string"
@@ -7328,13 +7363,11 @@
             "type": "string"
           },
           "PROJECT_STATUS": {
-            "type": "string"
+            "type": "string",
+            "default": "Initiation"
           },
           "PROJECT_SUBPHASE": {
             "type": "string"
-          },
-          "INTERSECTION_ID": {
-            "type": "integer"
           },
           "CRASH_COUNT": {
             "type": "integer"
@@ -7407,6 +7440,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "INTERSECTION": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
