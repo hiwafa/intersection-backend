@@ -709,6 +709,24 @@
               "INTERSECTION": {
                 "type": "string"
               },
+              "ROUTE": {
+                "type": "string"
+              },
+              "DIRECTION": {
+                "type": "string"
+              },
+              "VALID_MILEPOST_RANGE": {
+                "type": "string"
+              },
+              "START_MP": {
+                "type": "string"
+              },
+              "END_MP": {
+                "type": "string"
+              },
+              "EMPHASIS_AREA": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
