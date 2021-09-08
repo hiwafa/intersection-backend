@@ -14,20 +14,18 @@
   "attributes": {
     "PROJECT_NAME": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "PROJECT_NUMBER": {
       "type": "string"
     },
     "PROJECT_STATUS": {
       "type": "string",
-      "required": true
+      "required": false,
+      "default": "Initiation"
     },
     "PROJECT_SUBPHASE": {
       "type": "string"
-    },
-    "INTERSECTION_ID": {
-      "type": "biginteger"
     },
     "CRASH_COUNT": {
       "type": "biginteger"
@@ -92,6 +90,27 @@
     "project_treatments": {
       "via": "project",
       "collection": "project-treatment"
+    },
+    "INTERSECTION": {
+      "model": "intersection-inventory"
+    },
+    "ROUTE": {
+      "type": "string"
+    },
+    "DIRECTION": {
+      "type": "string"
+    },
+    "VALID_MILEPOST_RANGE": {
+      "type": "string"
+    },
+    "START_MP": {
+      "type": "string"
+    },
+    "END_MP": {
+      "type": "string"
+    },
+    "EMPHASIS_AREA": {
+      "type": "string"
     }
   }
 }
