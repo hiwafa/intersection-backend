@@ -37,6 +37,9 @@
     "crash_intersections": {
       "via": "intersection_inventory",
       "collection": "crash-intersection"
+    },
+    "AADT_GROWTH_FACTOR": {
+      "type": "integer"
     }
   }
 }
