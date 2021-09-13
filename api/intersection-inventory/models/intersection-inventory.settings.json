@@ -39,7 +39,7 @@
       "collection": "crash-intersection"
     },
     "AADT_GROWTH_FACTOR": {
-      "type": "integer"
+      "type": "biginteger"
     }
   }
 }
