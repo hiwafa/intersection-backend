@@ -601,14 +601,26 @@
           "PROGRAM_NUMBER": {
             "type": "string"
           },
-          "project_treatments": {
+          "treatments": {
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "TREATMENT_NAME",
+                "TREATMENT_TYPE",
+                "SERVICE_LIFE",
+                "CRF",
+                "CMF",
+                "TOTAL_TREATMENT_COST"
               ],
               "properties": {
                 "id": {
+                  "type": "string"
+                },
+                "TREATMENT_NAME": {
+                  "type": "string"
+                },
+                "TREATMENT_TYPE": {
                   "type": "string"
                 },
                 "SERVICE_LIFE": {
@@ -627,19 +639,25 @@
                   "type": "number"
                 },
                 "TOTAL_TREATMENT_COST": {
-                  "type": "integer"
+                  "type": "number"
                 },
                 "OM_COST": {
-                  "type": "integer"
+                  "type": "number"
                 },
                 "TREATMENT_COST": {
-                  "type": "integer"
+                  "type": "number"
                 },
-                "treatment": {
-                  "type": "string"
+                "project_treatments": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
-                "project": {
-                  "type": "string"
+                "projects": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -785,7 +803,7 @@
           "PROGRAM_NUMBER": {
             "type": "string"
           },
-          "project_treatments": {
+          "treatments": {
             "type": "array",
             "items": {
               "type": "string"

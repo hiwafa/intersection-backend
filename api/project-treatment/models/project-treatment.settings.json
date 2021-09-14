@@ -39,10 +39,6 @@
     "treatment": {
       "via": "project_treatments",
       "model": "treatment"
-    },
-    "project": {
-      "via": "project_treatments",
-      "model": "project"
     }
   }
 }

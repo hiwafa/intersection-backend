@@ -595,7 +595,107 @@
                 "treatment": {
                   "type": "string"
                 },
-                "project": {
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "projects": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "PROJECT_NAME": {
+                  "type": "string"
+                },
+                "PROJECT_NUMBER": {
+                  "type": "string"
+                },
+                "PROJECT_STATUS": {
+                  "type": "string"
+                },
+                "PROJECT_SUBPHASE": {
+                  "type": "string"
+                },
+                "CRASH_COUNT": {
+                  "type": "integer"
+                },
+                "CRASH_START_DATE": {
+                  "type": "string"
+                },
+                "CRASH_END_DATE": {
+                  "type": "string"
+                },
+                "NUMBER_OF_FATALITIES": {
+                  "type": "integer"
+                },
+                "NUMBER_OF_INJURIES": {
+                  "type": "integer"
+                },
+                "NUMBER_OF_PDO": {
+                  "type": "integer"
+                },
+                "NUMBER_OF_A_INJURIES": {
+                  "type": "integer"
+                },
+                "NUMBER_OF_B_INJURIES": {
+                  "type": "integer"
+                },
+                "NUMBER_OF_C_INJURIES": {
+                  "type": "integer"
+                },
+                "CRASH_RATE_AADT": {
+                  "type": "number"
+                },
+                "EPDO": {
+                  "type": "integer"
+                },
+                "EUAB": {
+                  "type": "number"
+                },
+                "EUAC": {
+                  "type": "number"
+                },
+                "BEN_COST": {
+                  "type": "number"
+                },
+                "PROJECT_START_DATE": {
+                  "type": "string"
+                },
+                "PROJECT_END_DATE": {
+                  "type": "string"
+                },
+                "PROJECT_AUTH_DATE": {
+                  "type": "string"
+                },
+                "PROJECT_COMP_DATE": {
+                  "type": "string"
+                },
+                "PROGRAM_NAME": {
+                  "type": "string"
+                },
+                "PROGRAM_NUMBER": {
+                  "type": "string"
+                },
+                "treatments": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "INTERSECTION": {
                   "type": "string"
                 },
                 "published_at": {
@@ -657,6 +757,12 @@
             "type": "number"
           },
           "project_treatments": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "projects": {
             "type": "array",
             "items": {
               "type": "string"

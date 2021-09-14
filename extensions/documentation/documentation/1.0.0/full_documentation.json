@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/09/2021 5:41:23 PM"
+    "x-generation-date": "09/14/2021 11:13:46 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7003,105 +7003,11 @@
                   "type": "string"
                 }
               },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "project": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "PROJECT_NAME": {
-                "type": "string"
-              },
-              "PROJECT_NUMBER": {
-                "type": "string"
-              },
-              "PROJECT_STATUS": {
-                "type": "string"
-              },
-              "PROJECT_SUBPHASE": {
-                "type": "string"
-              },
-              "CRASH_COUNT": {
-                "type": "integer"
-              },
-              "CRASH_START_DATE": {
-                "type": "string"
-              },
-              "CRASH_END_DATE": {
-                "type": "string"
-              },
-              "NUMBER_OF_FATALITIES": {
-                "type": "integer"
-              },
-              "NUMBER_OF_INJURIES": {
-                "type": "integer"
-              },
-              "NUMBER_OF_PDO": {
-                "type": "integer"
-              },
-              "NUMBER_OF_A_INJURIES": {
-                "type": "integer"
-              },
-              "NUMBER_OF_B_INJURIES": {
-                "type": "integer"
-              },
-              "NUMBER_OF_C_INJURIES": {
-                "type": "integer"
-              },
-              "CRASH_RATE_AADT": {
-                "type": "number"
-              },
-              "EPDO": {
-                "type": "integer"
-              },
-              "EUAB": {
-                "type": "number"
-              },
-              "EUAC": {
-                "type": "number"
-              },
-              "BEN_COST": {
-                "type": "number"
-              },
-              "PROJECT_START_DATE": {
-                "type": "string"
-              },
-              "PROJECT_END_DATE": {
-                "type": "string"
-              },
-              "PROJECT_AUTH_DATE": {
-                "type": "string"
-              },
-              "PROJECT_COMP_DATE": {
-                "type": "string"
-              },
-              "PROGRAM_NAME": {
-                "type": "string"
-              },
-              "PROGRAM_NUMBER": {
-                "type": "string"
-              },
-              "project_treatments": {
+              "projects": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
-              },
-              "INTERSECTION": {
-                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -7147,9 +7053,6 @@
             "type": "integer"
           },
           "treatment": {
-            "type": "string"
-          },
-          "project": {
             "type": "string"
           },
           "published_at": {
@@ -7251,14 +7154,26 @@
           "PROGRAM_NUMBER": {
             "type": "string"
           },
-          "project_treatments": {
+          "treatments": {
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "TREATMENT_NAME",
+                "TREATMENT_TYPE",
+                "SERVICE_LIFE",
+                "CRF",
+                "CMF",
+                "TOTAL_TREATMENT_COST"
               ],
               "properties": {
                 "id": {
+                  "type": "string"
+                },
+                "TREATMENT_NAME": {
+                  "type": "string"
+                },
+                "TREATMENT_TYPE": {
                   "type": "string"
                 },
                 "SERVICE_LIFE": {
@@ -7277,19 +7192,25 @@
                   "type": "number"
                 },
                 "TOTAL_TREATMENT_COST": {
-                  "type": "integer"
+                  "type": "number"
                 },
                 "OM_COST": {
-                  "type": "integer"
+                  "type": "number"
                 },
                 "TREATMENT_COST": {
-                  "type": "integer"
+                  "type": "number"
                 },
-                "treatment": {
-                  "type": "string"
+                "project_treatments": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
-                "project": {
-                  "type": "string"
+                "projects": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -7435,7 +7356,7 @@
           "PROGRAM_NUMBER": {
             "type": "string"
           },
-          "project_treatments": {
+          "treatments": {
             "type": "array",
             "items": {
               "type": "string"
@@ -7577,7 +7498,107 @@
                 "treatment": {
                   "type": "string"
                 },
-                "project": {
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "projects": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "PROJECT_NAME": {
+                  "type": "string"
+                },
+                "PROJECT_NUMBER": {
+                  "type": "string"
+                },
+                "PROJECT_STATUS": {
+                  "type": "string"
+                },
+                "PROJECT_SUBPHASE": {
+                  "type": "string"
+                },
+                "CRASH_COUNT": {
+                  "type": "integer"
+                },
+                "CRASH_START_DATE": {
+                  "type": "string"
+                },
+                "CRASH_END_DATE": {
+                  "type": "string"
+                },
+                "NUMBER_OF_FATALITIES": {
+                  "type": "integer"
+                },
+                "NUMBER_OF_INJURIES": {
+                  "type": "integer"
+                },
+                "NUMBER_OF_PDO": {
+                  "type": "integer"
+                },
+                "NUMBER_OF_A_INJURIES": {
+                  "type": "integer"
+                },
+                "NUMBER_OF_B_INJURIES": {
+                  "type": "integer"
+                },
+                "NUMBER_OF_C_INJURIES": {
+                  "type": "integer"
+                },
+                "CRASH_RATE_AADT": {
+                  "type": "number"
+                },
+                "EPDO": {
+                  "type": "integer"
+                },
+                "EUAB": {
+                  "type": "number"
+                },
+                "EUAC": {
+                  "type": "number"
+                },
+                "BEN_COST": {
+                  "type": "number"
+                },
+                "PROJECT_START_DATE": {
+                  "type": "string"
+                },
+                "PROJECT_END_DATE": {
+                  "type": "string"
+                },
+                "PROJECT_AUTH_DATE": {
+                  "type": "string"
+                },
+                "PROJECT_COMP_DATE": {
+                  "type": "string"
+                },
+                "PROGRAM_NAME": {
+                  "type": "string"
+                },
+                "PROGRAM_NUMBER": {
+                  "type": "string"
+                },
+                "treatments": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "INTERSECTION": {
                   "type": "string"
                 },
                 "published_at": {
@@ -7639,6 +7660,12 @@
             "type": "number"
           },
           "project_treatments": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "projects": {
             "type": "array",
             "items": {
               "type": "string"

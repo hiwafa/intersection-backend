@@ -53,6 +53,10 @@
     "project_treatments": {
       "via": "treatment",
       "collection": "project-treatment"
+    },
+    "projects": {
+      "via": "treatments",
+      "collection": "project"
     }
   }
 }
