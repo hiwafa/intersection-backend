@@ -636,6 +636,9 @@
                   "type": "string"
                 }
               },
+              "AADT_GROWTH_FACTOR": {
+                "type": "integer"
+              },
               "published_at": {
                 "type": "string"
               },
