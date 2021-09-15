@@ -52,12 +52,6 @@
     "ENVI_CONDITION": {
       "type": "string"
     },
-    "LATITUDE": {
-      "type": "decimal"
-    },
-    "LONGITUD": {
-      "type": "decimal"
-    },
     "NUMBER_OF_FATALITIES": {
       "type": "biginteger"
     },
@@ -90,6 +84,12 @@
     "vehciles": {
       "via": "crash_intersection",
       "collection": "vehciles"
+    },
+    "LATITUDE": {
+      "type": "string"
+    },
+    "LONGITUD": {
+      "type": "string"
     }
   }
 }

@@ -604,12 +604,6 @@
                 "ENVI_CONDITION": {
                   "type": "string"
                 },
-                "LATITUDE": {
-                  "type": "number"
-                },
-                "LONGITUD": {
-                  "type": "number"
-                },
                 "NUMBER_OF_FATALITIES": {
                   "type": "integer"
                 },
@@ -645,6 +639,12 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "LATITUDE": {
+                  "type": "string"
+                },
+                "LONGITUD": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
