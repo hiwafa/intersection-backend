@@ -35,10 +35,6 @@
     },
     "TREATMENT_COST": {
       "type": "biginteger"
-    },
-    "treatment": {
-      "via": "project_treatments",
-      "model": "treatment"
     }
   }
 }

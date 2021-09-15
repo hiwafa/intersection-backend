@@ -559,73 +559,6 @@
           "TREATMENT_COST": {
             "type": "integer"
           },
-          "treatment": {
-            "required": [
-              "id",
-              "TREATMENT_NAME",
-              "TREATMENT_TYPE",
-              "SERVICE_LIFE",
-              "CRF",
-              "CMF",
-              "TOTAL_TREATMENT_COST"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "TREATMENT_NAME": {
-                "type": "string"
-              },
-              "TREATMENT_TYPE": {
-                "type": "string"
-              },
-              "SERVICE_LIFE": {
-                "type": "integer"
-              },
-              "CRF": {
-                "type": "number"
-              },
-              "CMF": {
-                "type": "number"
-              },
-              "SALVAGE_PERCENT": {
-                "type": "number"
-              },
-              "INTEREST_RATE": {
-                "type": "number"
-              },
-              "TOTAL_TREATMENT_COST": {
-                "type": "number"
-              },
-              "OM_COST": {
-                "type": "number"
-              },
-              "TREATMENT_COST": {
-                "type": "number"
-              },
-              "project_treatments": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "projects": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -657,9 +590,6 @@
           },
           "TREATMENT_COST": {
             "type": "integer"
-          },
-          "treatment": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",

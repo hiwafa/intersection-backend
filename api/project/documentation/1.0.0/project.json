@@ -647,12 +647,6 @@
                 "TREATMENT_COST": {
                   "type": "number"
                 },
-                "project_treatments": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "projects": {
                   "type": "array",
                   "items": {

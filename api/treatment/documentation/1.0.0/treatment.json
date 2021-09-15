@@ -558,55 +558,6 @@
           "TREATMENT_COST": {
             "type": "number"
           },
-          "project_treatments": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "SERVICE_LIFE": {
-                  "type": "integer"
-                },
-                "CRF": {
-                  "type": "number"
-                },
-                "CMF": {
-                  "type": "number"
-                },
-                "SALVAGE_PERCENT": {
-                  "type": "number"
-                },
-                "INTEREST_RATE": {
-                  "type": "number"
-                },
-                "TOTAL_TREATMENT_COST": {
-                  "type": "integer"
-                },
-                "OM_COST": {
-                  "type": "integer"
-                },
-                "TREATMENT_COST": {
-                  "type": "integer"
-                },
-                "treatment": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "projects": {
             "type": "array",
             "items": {
@@ -755,12 +706,6 @@
           },
           "TREATMENT_COST": {
             "type": "number"
-          },
-          "project_treatments": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "projects": {
             "type": "array",

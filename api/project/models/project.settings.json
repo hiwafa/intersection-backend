@@ -88,8 +88,8 @@
       "type": "string"
     },
     "treatments": {
-      "collection": "treatment",
       "via": "projects",
+      "collection": "treatment",
       "dominant": true
     },
     "INTERSECTION": {
